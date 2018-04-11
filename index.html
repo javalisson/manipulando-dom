@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manipulando o DOM</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<h1>Document Object Model</h1>
+	<div id="container">
+		<!-- html manipulado pela DOM -->
+		<div id="vanilla-js">
+			<h2>Vanilla JS</h2>
+			<p>Através de JavaScript é possível alterar o conteúdo de uma página Web.</p>
+			<p>O conteúdo a seguir é uma saudação.</p>
+			<p id="msg_saudacao">Oi, tudo bem?</p>
+			<p><button id="btn_alterar_mensagem">Clique aqui para alterar a mensagem</button></p>
+			<div id="novo_conteudo"></div>
+			<p><button id="btn_adicionar_conteudo">Clique aqui para adicionar novo conteúdo</button></p>
+		</div>
+		
+		<!-- mesmo html, manipulado pela jquery -->
+		<div id="com-jquery">
+			<h2>jQuery</h2>
+			<p>Através de JavaScript é possível alterar o conteúdo de uma página Web.</p>
+			<p>O conteúdo a seguir é uma saudação.</p>
+			<p id="msg_saudacao_jq">Oi, tudo bem?</p>
+			<p><button id="btn_alterar_mensagem_jq">Clique aqui para alterar a mensagem</button></p>
+			<div id="novo_conteudo_jq"></div>
+			<p><button id="btn_adicionar_conteudo_jq">Clique aqui para adicionar novo conteúdo</button></p>
+		</div>
+	</div>
+	<div>
+		<h3>Requisições Assíncronas</h3>
+		<p><button id="btn_carregar_msg_assinc">Clique aqui para carregar a mensagem assíncrona</button></p>
+		<p id="msg_assincrona">... aguardando ...</p>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

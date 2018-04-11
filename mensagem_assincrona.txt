@@ -1,0 +1,1 @@
+<p>Um olá assíncrono!<p><button>Um botão</button>

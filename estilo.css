@@ -1,0 +1,14 @@
+h1, h2, h3 {
+	color: #FF0000;
+}
+
+#container {
+	display: flex;
+}
+
+#vanilla-js, #com-jquery {
+	flex: 50%;
+	margin: 10px;
+	padding: 20px;
+	border: 1px solid red;
+}
