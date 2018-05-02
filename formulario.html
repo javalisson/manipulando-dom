@@ -7,10 +7,24 @@
 <body>
 	<div>
 		<h1>Enviando dados por formulário</h1>
-		<form action="#" method="GET">
-			<label>Nome</label> <input type="text" name="nome">
-			<input type="submit" name="Enviar">
+		
+		<form action="saudar.php" method="GET">
+			<fieldset>
+				<legend>Saudação</legend>
+				<label>Nome</label> <input type="text" name="nome">
+				<input type="submit" name="botao" value="Saudar">
+			</fieldset>
 		</form>
+		
+		<form action="recuperar-senha.php" method="POST">
+			<fieldset>
+				<legend>Login</legend>
+				<label>Usuário</label> <input type="text" name="usuario"> <br />
+				<label>Senha</label> <input type="password" name="senha"> <br />
+				<input type="submit" name="Acessar" value="Acessar">
+			</fieldset>
+		</form>
+
 	</div>
 </body>
 </html>

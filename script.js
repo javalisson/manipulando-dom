@@ -35,10 +35,17 @@
 	});
 
 	$('#btn_carregar_msg_assinc').click(function () {
+		var nome = $('#nome-saudacao').val();
 		$.ajax({
-			url: 'mensagem_assincrona.txt',
+			// url: 'mensagem_assincrona.txt',
+			url: 'saudacao.json.php',
+			method: 'GET',
+			data: {
+				nome: nome
+			},
 			success: function(resultado) {
-				$('#msg_assincrona').html(resultado);
+				// $('#msg_assincrona').html(resultado);
+				$('#msg_assincrona').html(resultado.saudacao);
 			}
 		});
 	});
